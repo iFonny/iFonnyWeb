@@ -9,7 +9,7 @@
 			"NODE_ENV": "dev"
 		},
 		"env_production": {
-			"NODE_ENV": "pro"
+			"NODE_ENV": "prod"
 		}
 	}]
 }
