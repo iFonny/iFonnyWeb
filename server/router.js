@@ -15,9 +15,9 @@ module.exports = (config) => {
 	__app.engine('vue', expressVue);
 	__app.set('view engine', 'vue');
 	__app.set('config', config);
-	__app.set('views', path.join(__dirname, '/views'));
+	__app.set('views', path.join(config.root, '/views'));
 	__app.set('vue', {
-		componentsDir: path.join(__dirname, '/views/components'),
+		componentsDir: path.join(config.root, '/views/components'),
 		defaultLayout: 'layout'
 	});
 
