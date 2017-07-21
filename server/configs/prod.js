@@ -10,9 +10,9 @@ const config = {
 	logs: {
 		logType: 'combined',
 		options: {
-			stream: fs.createWriteStream(path.join(__dirname, '/..', 'access.log'), {
+			/*stream: fs.createWriteStream(path.join(__dirname, '/..', 'access.log'), {
 				flags: 'a'
-			})
+			})*/
 		}
 	},
 	port: process.env.PORT || 6969,
