@@ -1,0 +1,21 @@
+/*
+** CSS PRINCIPAL
+*/
+
+body {
+	background: url('/assets/images/background.png') no-repeat center fixed;
+	-webkit-background-size: cover;
+	/* pour anciens Chrome et Safari */
+	background-size: cover;
+	/* version standardisée */
+	color: white;
+}
+
+
+/* Menu en haut a droite */
+
+#menu {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}

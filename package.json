@@ -1,0 +1,32 @@
+{
+  "name": "ifonnyweb",
+  "version": "1.0.0",
+  "description": "iFonny.fr web",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iFonny/iFonnyWeb.git"
+  },
+  "keywords": [
+    "iFonny"
+  ],
+  "author": "iFonny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iFonny/iFonnyWeb/issues"
+  },
+  "homepage": "https://github.com/iFonny/iFonnyWeb#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "^1.7.0",
+    "express": "^4.15.3",
+    "express-validator": "^3.2.1",
+    "express-vue": "^3.15.1",
+    "helmet": "^3.6.1",
+    "morgan": "^1.8.2"
+  }
+}
