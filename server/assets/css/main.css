@@ -3,7 +3,7 @@
 */
 
 body {
-	background: url('/assets/images/background.png') no-repeat center fixed;
+	background: url('/assets/images/background.jpg') no-repeat center fixed;
 	-webkit-background-size: cover;
 	/* pour anciens Chrome et Safari */
 	background-size: cover;

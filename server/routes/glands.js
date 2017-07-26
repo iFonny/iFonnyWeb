@@ -47,7 +47,7 @@ const homeScope = {
 				"@context": "http://schema.org",
 				"@type": "WebPage",
 				"name": pageTitle,
-				"description": "slt t bienvenu cher moi",
+				"description": "slt t bienvenu cher iFonny le gland",
 			}
 		},
 		components: ['home-content', 'glands-content', 'more-content', 'projets-content', 'smurfs-content', 'not-found-content']
