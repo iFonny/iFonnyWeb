@@ -2,14 +2,27 @@
 ** CSS PRINCIPAL
 */
 
+
+/*
 body {
 	background: url('/assets/images/background.jpg') no-repeat center fixed;
 	-webkit-background-size: cover;
-	/* pour anciens Chrome et Safari */
 	background-size: cover;
-	/* version standardisée */
 	color: white;
 	min-height: 100%;
+}*/
+
+body {
+	height: 100%;
+	color: white;
+	background-image: url('/assets/images/background.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 }
 
 
