@@ -38,6 +38,7 @@ module.exports = (config) => {
 
 	__app.use(compression());
 
+	// Routes
 	__app.use('/', router);
 
 	let controllers = glob.sync(`${config.root}/routes/*.js`, {

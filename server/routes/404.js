@@ -2,15 +2,18 @@ exports.default = (router) => {
 	const config = __app.get('config');
 
 	router.get('*', (req, res, next) => {
-		res.render('404', homeScope);
+		res.render(pageName, homeScope);
 	});
 };
 
 const pageTitle = 'iFonny - Page not found';
+const pageName = '404';
+
 const homeScope = {
 	data: {
+		page: pageName,
 		title: pageTitle,
-		content: 'Page not found!',
+		data: 'Page not found!',
 	},
 	vue: {
 		head: {
@@ -22,6 +25,10 @@ const homeScope = {
 				{
 					name: 'twitter:title',
 					content: pageTitle
+				},
+				{
+					/* Menu JS script */
+					script: '/assets/js/menu.js'
 				},
 				{
 					/* Main CSS */
@@ -42,6 +49,7 @@ const homeScope = {
 				"name": pageTitle,
 				"description": "slt t pas bienvenu cher moi",
 			}
-		}
+		},
+		components: ['home-content', 'glands-content', 'more-content', 'projets-content', 'smurfs-content', 'not-found-content']
 	}
 };
