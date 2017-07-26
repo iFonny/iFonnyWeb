@@ -3,10 +3,11 @@ const path = require('path');
 const logger = require('morgan');
 const helmet = require('helmet');
 const express = require('express');
+const favicon = require('serve-favicon');
 const expressVue = require('express-vue');
-const validator = require('express-validator');
 const bodyParser = require('body-parser');
-const compression = require('compression')
+const compression = require('compression');
+const validator = require('express-validator');
 
 
 module.exports = (config) => {
@@ -23,6 +24,7 @@ module.exports = (config) => {
 
 	// Set static files to be served from '/assets'
 	__app.use("/assets", express.static(`${config.root}/assets`));
+	__app.use(favicon(path.join(config.root, 'assets', 'images', 'favicon.ico')));
 
 	__app.use(bodyParser.json());
 	__app.use(bodyParser.urlencoded({
