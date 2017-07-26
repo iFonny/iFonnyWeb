@@ -9,6 +9,7 @@ body {
 	background-size: cover;
 	/* version standardisée */
 	color: white;
+	min-height: 100%;
 }
 
 
