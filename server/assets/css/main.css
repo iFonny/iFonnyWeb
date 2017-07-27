@@ -54,3 +54,8 @@ html {
 .section-loading img {
 	vertical-align:middle;
 }
+.section-loading p {
+	display: inline-block;
+	width: 300px;
+	text-align: left;
+}
