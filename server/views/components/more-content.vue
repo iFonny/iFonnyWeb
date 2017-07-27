@@ -1,5 +1,25 @@
 <template lang="html">
-    <div>JE SUIS MORE <br>{{parentData}}</div>
+    <div>
+        <section v-if="!parentData.loading.status" class="section section-menu-home">
+            <div class="container">
+                <h1 class="title">{{parentData.title}}</h1>
+                <h2 class="subtitle">{{parentData}}</h2>
+            </div>
+        </section>
+        <section v-if="!parentData.loading.status" class="section section-page">
+            <div class="container">
+                <h1 class="title">{{parentData.title}}</h1>
+                <h2 class="subtitle">{{parentData}}</h2>
+            </div>
+        </section>
+
+        <section v-if="parentData.loading.status" class="section section-loading">
+            <div class="container">
+                <p><img :src="parentData.loading.image" alt="loading" height="100">
+                {{parentData.loading.message}}</p>
+            </div>
+        </section>
+    </div>
 </template>
 
 <script>

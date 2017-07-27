@@ -2,16 +2,6 @@
 ** CSS PRINCIPAL
 */
 
-
-/*
-body {
-	background: url('/assets/images/background.jpg') no-repeat center fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
-	color: white;
-	min-height: 100%;
-}*/
-
 html {
 	height: 100%;
 	color: white;
@@ -32,4 +22,35 @@ html {
 	position: absolute;
 	top: 0px;
 	right: 0px;
+}
+
+.section-menu-home {
+	height: calc(250px - 20px);
+	width: calc(100% - (375px - 8px));
+}
+
+@media only screen and (max-width: 1024px) {
+	.section-menu-home {
+		height: 100%;
+		width: 100%;
+		margin-top: 250px;
+	}
+}
+
+.section-page {
+	text-align: center;
+}
+
+.section-loading {
+	margin-top: 250px;
+	text-align: center;
+	font-size: 30px;
+	font-family: "Avenir Next", Avenir, Helvetica, Arial, sans-serif;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	text-shadow: 0 0 4px #000;
+	color: rgb(200, 176, 121);
+}
+.section-loading img {
+	vertical-align:middle;
 }

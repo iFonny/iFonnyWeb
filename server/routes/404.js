@@ -8,11 +8,17 @@ exports.default = (router) => {
 
 const pageTitle = 'iFonny - Page not found';
 const pageName = '404';
+const nbLoadingImages = 2;
 
 const homeScope = {
 	data: {
 		page: pageName,
 		title: pageTitle,
+		loading: {
+			status: true,
+			image: `/assets/images/loading-${Math.floor(Math.random() * nbLoadingImages) + 1}.gif`,
+			message: 'Loading'
+		},
 		data: 'Page not found!',
 	},
 	vue: {

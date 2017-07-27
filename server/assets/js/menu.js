@@ -4,37 +4,71 @@ window.addEventListener("load", function (event) {
 	HYPE.documents["MeniFonny"].showSceneNamed(app.page);
 
 	// Hype functions override
-	let hypeFunctions = HYPE.documents["MeniFonny"].functions();
+	var hypeFunctions = HYPE.documents["MeniFonny"].functions();
+	var nbLoadingImages = 2;
 
 	hypeFunctions.menuHomeButton = function (hypeDocument, element, event) {
+		// Loading reset and randy gif
+		app.loading.status = true;
+		app.loading.image = `/assets/images/loading-${Math.floor(Math.random() * nbLoadingImages) + 1}.gif`;
+
 		app.page = 'home';
 		document.title = app.title = 'iFonny - Home';
 		history.pushState(null, null, app.page);
 		app.data = 'TODO: REQUEST DATA';
-		console.log(element);
 	};
 	hypeFunctions.menuGlandsButton = function (hypeDocument, element, event) {
+		// Loading reset and randy gif
+		app.loading.status = true;
+		app.loading.image = `/assets/images/loading-${Math.floor(Math.random() * nbLoadingImages) + 1}.gif`;
+
 		app.page = 'glands';
 		document.title = app.title = 'iFonny - Glands';
 		history.pushState(null, null, app.page);
 		app.data = 'TODO: REQUEST DATA';
 	};
 	hypeFunctions.menuMoreButton = function (hypeDocument, element, event) {
+		// Loading reset and randy gif
+		app.loading.status = true;
+		app.loading.image = `/assets/images/loading-${Math.floor(Math.random() * nbLoadingImages) + 1}.gif`;
+
 		app.page = 'more';
 		document.title = app.title = 'iFonny - More';
 		history.pushState(null, null, app.page);
 		app.data = 'TODO: REQUEST DATA';
 	};
 	hypeFunctions.menuProjetsButton = function (hypeDocument, element, event) {
+		// Loading reset and randy gif
+		app.loading.status = true;
+		app.loading.image = `/assets/images/loading-${Math.floor(Math.random() * nbLoadingImages) + 1}.gif`;
+
 		app.page = 'projets';
 		document.title = app.title = 'iFonny - Projets';
 		history.pushState(null, null, app.page);
 		app.data = 'TODO: REQUEST DATA';
 	};
 	hypeFunctions.menuSmurfsButton = function (hypeDocument, element, event) {
+		// Loading reset and randy gif
+		app.loading.status = true;
+		app.loading.image = `/assets/images/loading-${Math.floor(Math.random() * nbLoadingImages) + 1}.gif`;
+
 		app.page = 'smurfs';
 		document.title = app.title = 'iFonny - Smurfs';
 		history.pushState(null, null, app.page);
 		app.data = 'TODO: REQUEST DATA';
 	};
+
+	// Loading 
+	var points = 0;
+	setInterval(function () {
+		if (app.loading.status) {
+			if (points == 3) {
+				app.loading.message = app.loading.message.slice(0, -3);
+				points = 0;
+			} else {
+				app.loading.message += '.';
+				points += 1;
+			}
+		}
+	}, 300);
 });
