@@ -24,6 +24,16 @@ html {
 	right: 0px;
 }
 
+.rain {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%; 
+	width: 100%; 
+	border: none;
+	/* z-index: -1; */
+}
+
 .section-menu-home {
 	height: calc(250px - 20px);
 	width: calc(100% - (375px - 8px));
@@ -53,9 +63,11 @@ html {
 }
 .section-loading img {
 	vertical-align:middle;
+	height: 100px;
 }
 .section-loading p {
 	display: inline-block;
 	width: 300px;
 	text-align: left;
+	user-select : none;
 }

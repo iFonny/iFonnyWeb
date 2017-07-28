@@ -14,8 +14,9 @@
         </section>
 
         <section v-if="parentData.loading.status" class="section section-loading">
+            <iframe class="rain" src="/assets/ViviRain/ViviRain.html"></iframe>
             <div class="container">
-                <p><img :src="parentData.loading.image" alt="loading" height="100">
+                <p><img :src="parentData.loading.image" alt="loading">
                 {{parentData.loading.message}}</p>
             </div>
         </section>

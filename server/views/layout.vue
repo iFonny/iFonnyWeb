@@ -10,6 +10,13 @@
     </head>
     
     <body>
+
+        <!-- 
+        <div id="vivirain_hype_container">
+            <script type="text/javascript" charset="utf-8" src="/assets/ViviRain/ViviRain.hyperesources/vivirain_hype_generated_script.js"></script>
+        </div>
+        -->
+        
         <div id="menifonny_hype_container">
             <script type="text/javascript" charset="utf-8" src="/assets/menu/MeniFonny.hyperesources/menifonny_hype_generated_script.js"></script>
         </div>
