@@ -87,13 +87,13 @@ body {
 	font-weight: bolder;
 	font-size: 10rem;
 	text-align: center;
-	font-family: "Neucha", serif;
+	font-family: "Neucha", "Avenir Next", serif;
 }
 
 .page-not-found-message {
 	font-size: 2rem;
 	text-align: center;
-	font-family: "Neucha", serif;
+	font-family: "Neucha", "Avenir Next", serif;
 }
 
 .page-not-found-link {
@@ -106,4 +106,22 @@ body {
 	position: relative;
 	left: -50%;
 	width: 120px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.page-not-found-message {
+		font-size: 1.5rem;
+	}
+	.page-not-found {
+		font-size: 8rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.page-not-found-message {
+		font-size: 1.3rem;
+	}
+	.page-not-found {
+		font-size: 5rem;
+	}
 }
