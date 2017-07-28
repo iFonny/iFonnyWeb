@@ -19,8 +19,6 @@ module.exports.initLogs = () => {
 				avatar_url: `${config.url}/assets/images/iFonnyPP.jpg`,
 				content: msg + '`' + message + '`'
 			}
-		}, function (err, httpResponse, body) {
-			console.log(httpResponse);
 		});
 	};
 
