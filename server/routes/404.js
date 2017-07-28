@@ -15,7 +15,7 @@ const homeScope = {
 		page: pageName,
 		title: pageTitle,
 		loading: {
-			status: true,
+			status: false,
 			image: `/assets/images/loading-${Math.floor(Math.random() * nbLoadingImages) + 1}.gif`,
 			message: 'Soon'
 		},

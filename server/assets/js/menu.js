@@ -72,3 +72,7 @@ window.addEventListener("load", function (event) {
 		}
 	}, 300);
 });
+
+function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }

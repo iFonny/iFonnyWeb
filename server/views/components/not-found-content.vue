@@ -1,15 +1,16 @@
 <template lang="html">
     <div>
         <section v-if="!parentData.loading.status" class="section section-menu-home">
-            <div class="container">
-                <h1 class="title">{{parentData.title}}</h1>
-                <h2 class="subtitle">{{parentData}}</h2>
-            </div>
+            <iframe class="rain" src="/assets/ViviRain/ViviRain.html"></iframe>
         </section>
         <section v-if="!parentData.loading.status" class="section section-page">
             <div class="container">
-                <h1 class="title">{{parentData.title}}</h1>
-                <h2 class="subtitle">{{parentData}}</h2>
+                <div class="page-not-found">404</div>
+                <div class="page-not-found-message">Sorry, the page you requested may have been moved or deleted.<br>(En français: T'es perdu comme Vivi)</div>
+                <br>
+                <a class="page-not-found-link" href="http://twitter.com/iFonny_">
+                    <img class="page-not-found-image" border="0" alt="twitter" src="/assets/images/twitter.png">
+                </a>
             </div>
         </section>
 
