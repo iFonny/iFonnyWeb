@@ -2,6 +2,26 @@
 	z-index: -1;
 }
 
+.section-menu-home {
+	height: calc(250px - 20px);
+	width: 100%;
+}
+
+@media only screen and (max-width: 1285px) {
+	.section-menu-home {
+		height: 100%;
+		width: calc(100% - (375px - 8px));
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.section-menu-home {
+		height: 100%;
+		width: 100%;
+		margin-top: 250px;
+	}
+}
+
 .container-home {
 	padding-top: 3em;
 	text-align: center;
@@ -40,7 +60,7 @@
 
 .social-list img {
 	vertical-align: middle;
-	margin-right: 8px; 
+	margin-right: 8px;
 	height: 40px;
 }
 

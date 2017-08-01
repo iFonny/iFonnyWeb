@@ -40,19 +40,6 @@ body {
 	z-index: 0;
 }
 
-.section-menu-home {
-	height: calc(250px - 20px);
-	width: calc(100% - (375px - 8px));
-}
-
-@media only screen and (max-width: 1024px) {
-	.section-menu-home {
-		height: 100%;
-		width: 100%;
-		margin-top: 250px;
-	}
-}
-
 .section-page {
 	text-align: center;
 	font-family: "Avenir Next", Avenir, Helvetica, Arial, sans-serif;
