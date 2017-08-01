@@ -1,0 +1,98 @@
+.rain-home {
+	z-index: -1;
+}
+
+.container-home {
+	padding-top: 3em;
+	text-align: center;
+}
+
+#social-youtube-home {
+	margin: 0em;
+	margin-right: 2em;
+}
+
+#social-discord-home {
+	margin: 0em;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+#social-twitter-home {
+	margin: 0em;
+	margin-left: 2em;
+}
+
+.container-home img {
+	height: 100px;
+}
+
+.container-home a {
+	display: inline-block;
+	font-size: 24px;
+	font-family: "Avenir Next", Avenir, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-shadow: 0 0 4px #000;
+	color: #d6d6d6;
+	text-decoration: none;
+}
+
+.social-list img {
+	vertical-align: middle;
+	margin-right: 8px; 
+	height: 40px;
+}
+
+.social-list a {
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	display: inline-block;
+	font-size: 20px;
+	font-family: "Avenir Next", Avenir, Helvetica, Arial, sans-serif;
+	text-shadow: 0 0 4px #000;
+	color: #e0e0e0;
+	text-decoration: none;
+}
+
+.social-list a strong {
+	font-style: italic;
+	color: #FFF;
+}
+
+@media only screen and (max-width: 1024px) {
+	.container-home {
+		padding-top: 0em;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#social-youtube-home {
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+	}
+	#social-discord-home {
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+	}
+	#social-twitter-home {
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+	}
+}
+
+
+/*
+.section-loading img {
+	vertical-align: middle;
+	height: 100px;
+}
+
+.section-loading p {
+	display: inline-block;
+	width: 300px;
+	text-align: left;
+	user-select: none;
+}
+*/
