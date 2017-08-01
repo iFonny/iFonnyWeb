@@ -20,7 +20,6 @@ body {
 	overflow: auto;
 }
 
-
 /* Menu en haut a droite */
 
 #menifonny_hype_container {
@@ -75,13 +74,13 @@ body {
 	font-weight: bolder;
 	font-size: 10rem;
 	text-align: center;
-	font-family: "Neucha", "Avenir Next", serif;
+	font-family: "Neucha", "Avenir Next", Avenir, Helvetica, Arial, sans-serif;
 }
 
 .page-not-found-message {
 	font-size: 2rem;
 	text-align: center;
-	font-family: "Neucha", "Avenir Next", serif;
+	font-family: "Neucha", "Avenir Next", Avenir, Helvetica, Arial, sans-serif;
 }
 
 .page-not-found-link {
