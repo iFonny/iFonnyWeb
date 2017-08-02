@@ -2,6 +2,7 @@ const express = require('express');
 const config = require('./configs/cursor');
 const router = require('./router');
 
+global.__axios = require('axios');
 global.__app = express();
 __app.set('config', config);
 
