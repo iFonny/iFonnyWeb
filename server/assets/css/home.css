@@ -76,6 +76,10 @@
 	text-decoration: none;
 }
 
+.container-home a:hover, .social-list a:hover {
+	color: #3498DB;
+}
+
 .social-list a strong {
 	font-style: italic;
 	color: #FFF;

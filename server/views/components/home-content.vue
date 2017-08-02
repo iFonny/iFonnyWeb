@@ -16,6 +16,7 @@
         <section v-if="!parentData.loading.status" class="section section-page">
             <div class="container">
                 <h1 class="title">{{parentData.data.title}}</h1>
+                <br>
                 <div class="social-list">
                     <a v-for="social in parentData.data.list" :href="social.url"><img :src="social.image">{{social.network}} - <strong>{{social.username}}</strong></a>
                 </div>
