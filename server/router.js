@@ -12,6 +12,8 @@ const validator = require('express-validator');
 module.exports = (config) => {
 	const router = express.Router();
 
+	__app.use(compression());
+
 	__app.engine('vue', expressVue);
 	__app.set('view engine', 'vue');
 	__app.set('views', path.join(config.root, '/views'));
@@ -35,8 +37,6 @@ module.exports = (config) => {
 	__app.use(validator());
 
 	__app.use(logger(config.logs.logType, config.logs.options));
-
-	__app.use(compression());
 
 	// Routes
 	__app.use('/', router);
