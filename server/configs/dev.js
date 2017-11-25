@@ -13,7 +13,7 @@ const config = {
 		logType: 'dev',
 		options: {}
 	},
-	port: process.env.PORT || 9000,
+	port: process.env.PORT || 3002,
 };
 
 // Exports module

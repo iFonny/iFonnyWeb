@@ -18,7 +18,7 @@ const config = {
 			})*/
 		}
 	},
-	port: process.env.PORT || 6969,
+	port: process.env.PORT || 3001,
 };
 
 // Exports module
