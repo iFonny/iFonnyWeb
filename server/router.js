@@ -9,7 +9,6 @@ const bodyParser = require('body-parser');
 const compression = require('compression');
 const validator = require('express-validator');
 
-
 module.exports = (config) => {
 	const router = express.Router();
 
