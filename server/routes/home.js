@@ -1,7 +1,7 @@
 exports.default = (router) => {
 	const config = __app.get('config');
 
-	router.get('/home', (req, res, next) => {
+	router.get(['/home', '/glands', '/more', '/projets', '/smurfs'], (req, res, next) => {
 		__axios.get(`${config.api}/page/home`)
 			.then(function (response) {
 				homeScope.data.data = response.data;

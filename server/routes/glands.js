@@ -1,9 +1,10 @@
 exports.default = (router) => {
 	const config = __app.get('config');
 
+	/* Bye bye glands
 	router.get('/glands', (req, res, next) => {
 		res.render(pageName, homeScope);
-	});
+	}); */
 };
 
 const pageTitle = 'iFonny - Glands';

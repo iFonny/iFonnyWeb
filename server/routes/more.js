@@ -1,9 +1,11 @@
 exports.default = (router) => {
 	const config = __app.get('config');
 
+	/* Bye bye more
 	router.get('/more', (req, res, next) => {
 		res.render(pageName, homeScope);
 	});
+	*/
 };
 
 const pageTitle = 'iFonny - More';

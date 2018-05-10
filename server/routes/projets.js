@@ -1,9 +1,10 @@
 exports.default = (router) => {
 	const config = __app.get('config');
 
+	/* Bye bye projets
 	router.get('/projets', (req, res, next) => {
 		res.render(pageName, homeScope);
-	});
+	}); */
 };
 
 const pageTitle = 'iFonny - Projets';
